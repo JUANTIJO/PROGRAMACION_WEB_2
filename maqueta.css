@@ -1,0 +1,120 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "menu"
+        "contenido"
+        "contenido1"
+        "footer";
+    height: 100vh;
+    gap: 10px;
+}
+
+/* Encabezado */
+.header {
+    grid-area: header;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Menú de navegación */
+.menu {
+    grid-area: menu;
+    background-color: #FF9800; /* Naranja */
+    padding: 1rem;
+}
+
+/* Contenido principal */
+.contenido {
+    grid-area: contenido;
+    padding: 1rem;
+    background-color: #ffffff; /* Azul */
+    color: rgb(238, 35, 35);
+    display: grid;
+    grid-template-columns: 1fr; /* Sección dividida en varias áreas */
+    gap: 10px;
+}
+
+.contenido1 {
+    grid-area: contenido1;
+    padding: 1rem;
+    background-color: #ffffff; /* Azul */
+    color: rgb(238, 35, 35);
+    display: grid;
+    grid-template-columns: 1fr; /* Sección dividida en varias áreas */
+    gap: 10px;
+}
+
+/* Tres columnas */
+.tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.dos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.columna {
+    background-color: #73c958;
+    color: #333;
+    padding: 5rem;
+    text-align: center;
+}
+
+.columna1 {
+    background-color: #db3591;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+.columna3 {
+    background-color: #ffffff;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Columna dividida en dos filas */
+.columna-dos-filas {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+}
+
+.fila {
+    background-color: #7d8eee;
+    color: #333;
+    padding: 3rem;
+    text-align: center;
+}
+
+/* Pie de página */
+.footer {
+    grid-area: footer;
+    background-color: #9C27B0; /* Morado */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Grid layout general */
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "menu"
+        "contenido"
+        "contenido1"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    gap: 0px;
+}
