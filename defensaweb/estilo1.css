@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: tan;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TITULO */
+.titulo {
+    background-color: #f1f1f1;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+/* MENU */
+.menu {
+ 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* SLIDER */
+.slider {
+    background-color: #bbb;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    
+}
+
+/* CONTENEDOR DE TABLA Y TARJETAS */
+.contenedor-tabla-tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+/* TABLA */
+.tabla1 {
+    flex: 2;
+    background-color: #fff;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+/* TARJETAS */
+.tarjetas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjeta1, .tarjeta2 {
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.tarjeta1 {
+    height: 200px;
+}
+
+.tarjeta2 {
+    height: 240px;
+}
+
+
+/* CONTENEDOR DE TABLA 3, MAPA Y FORMULARIO */
+.contenedor-tabla-mapa-formulario {
+    display: flex;
+    gap: 10px;
+}
+
+/* TABLA 3 */
+.tabla3 {
+    flex: 2;
+    background-color: #fff;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+/* MAPA Y FORMULARIO */
+.mapa-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mapa, .formulario {
+    background-color: #d1d1d1;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #333;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.trasition1:hover{
+    background-color: chartreuse;
+    text-align: center;
+    
+}
+
+.trasition20:hover {
+    background-position: right;
+    background-color: lightcoral;
+}
+
+/* Animación 17: Desenfoque progresivo */
+@keyframes blurEffect {
+    0% { filter: blur(0); }
+    50% { filter: blur(5px); }
+    100% { filter: blur(0); }
+}
+.animation17 {
+    animation: blurEffect 3s infinite;
+}
+
+/* Animación 15: Latido de corazón */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+.animation15 {
+    animation: heartbeat 1.5s infinite;
+}
+/* Animación 16: Parpadeo */
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+/* Animación 5: Aumento y reducción de escala */
+@keyframes scaleUpDown {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+.animation5 {
+    animation: scaleUpDown 3s infinite;
+}
+
+
+/* Menú horizontal */
+.menu {
+    background-color: #444;
+    display: flex; /* Cambia el display a flex para que los elementos se dispongan en fila */
+    justify-content: center; /* Centra el menú horizontalmente */
+    padding: 0;
+    margin: 0 auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Los elementos del menú se alinean horizontalmente */
+}
+
+.menu li {
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón sobre los elementos */
+.menu li a:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+    margin-top: 20px; /* Espacio entre la tabla y las redes sociales */
+    text-align: center; /* Centra el texto */
+}
+
+.redes-sociales p {
+    font-size: 18px; /* Tamaño del texto */
+}
+
+.iconos {
+    display: flex; /* Usar Flexbox para alinear los iconos horizontalmente */
+    justify-content: center; /* Centra los iconos */
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+.iconos img {
+    width: 40px; /* Ancho de los iconos */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    transition: transform 0.3s; /* Transición para el efecto hover */
+}
+
+.iconos img:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
