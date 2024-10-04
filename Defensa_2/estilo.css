@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    padding: 10px;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+/* Menu Styles */
+.menu {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Images */
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+img.rounded {
+    border-radius: 50%;
+}
+
+/* Text Styles */
+.texto {
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Buttons */
+.btn {
+    margin: 5px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+/* Table Styles */
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-body {
+    font-weight: bold;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Custom content */
+.contenido {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Table Styles */
+.table {
+    background-image: url('imagenes/fondo1.webp'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover; /* Hace que la imagen de fondo cubra toda la tabla */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #fff; /* Texto blanco para contrastar con la imagen de fondo */
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para las celdas */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el color de fondo al pasar el ratón sobre las filas */
+}
+
+/* Bordes de otros elementos */
+.navbar, .imagen, .texto, .contenido {
+    border: 2px solid #dc3545; /* Borde rojo para otros elementos */
+    border-radius: 8px;
+}

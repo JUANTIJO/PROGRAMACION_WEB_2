@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defensa nro 2</title>
+   <!-- Bootstrap CSS CDN -->
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Menú -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 menu text-center border">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">PROGRAMACION WEB 2</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#"></a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de imágenes y texto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 imagen text-center border">
+               <br>
+                <img src="imagenes/seis.jfif" alt="" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-6 texto text-center border">
+                <h1>EL DRAGON MIGUEL</h1>
+                <p>Una vez nació un dragón pequeño, delgado y amarillo llamado Miguel.
+                    Al crecer, el pequeño dragón  intentó expulsar fuego por su boca, pero no lo consiguió.  Únicamente echaba humo de color gris.
+                    Su padre, un dragón grande, fuerte y de color verde le dijo:
+                    – Ahora no puedes, pero si practicas durante días seguro que lo logras.
+                    El dragón amarillo practicó durante semanas dos horas diarias hasta que consiguió expulsar grandes llamaradas.
+                    Al verlo, el rey le contrató para encender todas las antorchas del castillo.</p>
+            </div>
+            <div class="col-md-3 imagen text-center border" class="imagen">
+                <br>
+                <img src="imagenes/cuatro.jfif" alt=""  width="150" height="150" class="rounded float-left">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de tabla y contenido -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 tabla text-center border">
+                <br>
+                <table class="table table-hover" class="tabla-fondo">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>
+                                <!-- Botón para abrir el modal -->
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+                                    Eliminar
+                                </button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                                    Aceptar
+                                </button>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">
+                                    Editar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>María López</td>
+                            <td>
+                                <!-- Botón para abrir el modal -->
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+                                    Eliminar
+                                </button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                                    Aceptar
+                                </button>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">
+                                    Editar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                            <td>1</td>
+                            <td>Juan Alverto</td>
+                            <td>
+                                <!-- Botón para abrir el modal -->
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+                                    Eliminar
+                                </button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                                    Aceptar
+                                </button>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">
+                                    Editar
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Modal 1 -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel1"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    BORRADO DE DATOS REALIZADA CON EXITO!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel2"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    INFORMACION REALIZADA CON EXITO, GUARDADO EN LA BD!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal 3--->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel3"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                INFORMACION  EDITADA CON EXITO, GUARDADO EN LA BD!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+            <div class="col-md-4 contenido text-center border">
+                    <br>       
+                <img src="imagenes/uno.jfif" alt="" width="250" height="250" class="float-left">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
